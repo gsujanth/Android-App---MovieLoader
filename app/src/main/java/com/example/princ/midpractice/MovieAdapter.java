@@ -64,7 +64,7 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
             public void onClick(View view) {
                 Log.d("demo", "onClick: "+position);
                 dUpdate.updateFavorite(position);
-                //hij
+                //hiji
 
             }
         });
