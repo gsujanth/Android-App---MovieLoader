@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.princ.midpractice.SearchMoviesActivity">
+
+    <TextView
+        android:id="@+id/searchMoviesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:text="Search Movies"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/searchMoviesET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchMoviesTV"
+        android:layout_alignStart="@+id/searchMoviesTV"
+        android:layout_below="@+id/searchMoviesTV"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchMoviesET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/resultsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchMoviesET"
+        android:layout_alignStart="@+id/searchMoviesET"
+        android:layout_below="@+id/searchButton"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
+        android:text="Results" />
+
+    <ListView
+        android:id="@+id/searchMoviesLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@+id/resultsTV" />
+</RelativeLayout>
