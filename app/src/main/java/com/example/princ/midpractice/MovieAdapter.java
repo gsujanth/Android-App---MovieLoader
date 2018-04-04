@@ -72,7 +72,6 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
         }else{
             favButton.setBackgroundColor(Color.GRAY);
         }
-//hi
         return convertView;
 
     }
